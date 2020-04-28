@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 66 : UIB Data Form</title>
+</head>
+<body>
+    <div id="topbar">
+        Forms
+    </div>
+    <main>
+       
+        <form action="/url" method="POST" class="left-form">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first_name">                
+                        </li>
+                        <li>
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last_name">                
+                        </li>
+                        <li>
+                            <label for="street">Street:</label>
+                            <input type="text" id="street" name="street">                
+                        </li>
+                        <li>
+                            <label for="zipcode">Zipcode:</label>
+                            <input type="text" id="zipcode" name="zipcode">                
+                        </li>
+                        <li>
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city">                
+                        </li>
+                        <li>
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone" name="phone">                
+                        </li>
+                        <li>
+                            <label for="e-mail">E-Mail:</label>
+                            <input type="text" id="e-mail" name="e-mail">                
+                        </li>
+                        <li>
+                            <label for="comments">Comments:</label>       
+                            <textarea name="comment" id="msg" cols="20" rows="5" placeholder="Tell us more about important colors, etc."></textarea>
+                        </li>
+                    </ul>
+                </fieldset>   
+            </div> 
+        </form>
+
+        <form action="/url" method="POST" class="right-form"> 
+            <fieldset>
+            <legend>Products</legend>
+               <div class="container"> 
+            
+                    <ul>
+                        <li>
+                            <p>Web Design</p>
+                            <input 
+                                type="radio" 
+                                id="design-choice-1" 
+                                name="design-choices" 
+                                value="text"
+                                checked
+                            />
+                            <label for="design-choice-1">Individual</label>
+        
+                            <input 
+                                type="radio" 
+                                id="design-choice-2" 
+                                name="design-choices" 
+                                value="text"
+                            />
+                            <label for="design-choice-2">Template</label>
+                        </li>
+                        <li class="checkbox">
+                            <p>Web Development</p>
+                            <span class="checkbox">
+                                <input
+                                    type="checkbox"
+                                    id="development-choice-1"
+                                    name="development-choices"
+                                    value="text"
+                                />
+                                <label for="development-choice-1">HTML & CSS</label>
+                                </span>
+
+                            <span class=checkbox>   
+                                <input
+                                    type="checkbox"
+                                    id="development-choice-2"
+                                    name="development-choices"
+                                    value="text"
+                                />
+                                <label for="development-choice-2">Javascript</label>
+                            </span>
+                            <span class="checkbox">
+                                <input
+                                    type="checkbox"
+                                    id="development-choice-3"
+                                    name="development-choices"
+                                    value="text"
+                                />
+                                <label for="development-choice-3">MongoDB</label>
+                            </span>
+                        </li>
+                        <li>
+                            <label for="date-start">Project Start:</label>
+                            <input
+                                type="date"
+                                id="date-start"
+                                name="project-date"
+                            >
+                        </li>
+                        <li>
+                            <label for="date-end">Project End:</label>
+                            <input
+                                type="date"
+                                id="date-end"
+                                name="project-date"
+                            >
+                        </li>
+                        <li>
+                            <label for="category">Category</label>
+                            <select name="category" id="category-select">
+                                <option value="personal">Personal</option>
+
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <button type="submit" class="button">Order our services</button>
+        </form>
+        </div>
+    </main>
+</body>
+</html>
