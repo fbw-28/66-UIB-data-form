@@ -25,7 +25,7 @@ header {
 
 .pdata,
 .products {
-    width: 48%;
+    flex-basis: 48%;
     margin: 1rem;
 }
 
