@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <!-- data -->
+        <fieldset class="personal_data">
+            <legend>Personal Data</legend>
+            <div>
+                <label for="name">First name:</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="surname">Last name:</label>
+                <input type="text" id="surname" name="user_surname">
+            </div>
+            <div>
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="user_streetname">
+            </div>
+            <div>
+                <label for="zipcode">Zipcode:</label>
+                <input type="number" id="zipcode" name="user_zipcode" maxlength="8">
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="user_city">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="user_phonenumber">
+            </div>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email">
+            </div>
+            <div>
+                <label for="comment">Comments:</label>
+                <textarea name="user_comment" id="comment" cols="20" rows="10" maxlength="250"
+                    placeholder="Tell us more about important colors, etc."></textarea>
+            </div>
+        </fieldset>
+        <!-- products -->
+        <fieldset class="products">
+            <legend>Products</legend>
+            <div>
+                <p class="title">Web Design:</p>
+                <div>
+                    <span>
+                        <input type="radio" id="design-choice-1" name="web_design" value="preference" checked>
+                        <label for="design-choice-1" class="notbold_text">Individual</label>
+                    </span>
+                    <span>
+                        <input type="radio" id="design-choice-2" name="web_design" value="preference">
+                        <label for="design-choice-2" class="notbold_text">Template</label>
+                    </span>
+                </div>
+            </div>
+
+            <div>
+                <p class="title">Web Development:</p>
+                <div>
+                    <input type="checkbox" id="html" name="web_dev" value="technology">
+                    <label for="html" class="notbold_text">HTML & CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="java" name="web_dev" value="technology">
+                    <label for="java" class="notbold_text">JavaScript</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mongo" name="web_dev" value="technology">
+                    <label for="mongo" class="notbold_text">MongoDB</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="start">Project Start:</label>
+                <input type="date" id="start" name="start_date">
+            </div>
+            <div>
+                <label for="end">Project End:</label>
+                <input type="date" id="end" name="end_date">
+            </div>
+
+            <div>
+                <label for="category-select">Category</label>
+                <select name="category" id="category-select">
+                    <option value="Personal">Personal</option>
+                    <option value="Business">Business</option>
+                </select>
+            </div>
+
+        </fieldset>
+        <!-- button -->
+        <div class="button">
+            <button type="submit" class="order_button">Order our services</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
