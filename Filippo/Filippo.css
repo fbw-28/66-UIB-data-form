@@ -1,0 +1,47 @@
+html{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header{
+    width: 100%;
+    height: 5vh;
+    text-align: left;
+    background-color: grey;
+    color: white;
+ 
+    font-size: 3vh;
+}
+legend{
+    color: blue;
+}
+.left {
+    width: 50%;
+    height: 150%;
+   position: relative;
+   top: 5vh;
+   
+}
+    
+.right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    position:absolute;
+    top:11vh;
+    right: 0%;
+}
+li {
+    text-decoration: none;
+}
+input, textarea{
+    width: 100%;
+}
+input[type=radio], input[type=checkbox] {
+    width: 5%;
+}
+#category-select {
+    width: 100%;
+}
