@@ -1,0 +1,64 @@
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.personal label {
+    font-weight: bold;
+}
+
+legend {
+    margin-top: 0;
+    font-weight: bold;
+    color: blue;
+    font-size: larger;
+}
+
+p {  
+    font-weight: bolder;
+}
+
+
+#start, #end, #box {
+   
+    height: 25px;
+}
+
+strong {
+   padding: 0;
+}
+
+select {
+    width: 621px;
+}
+
+/* .personal {
+    background-color: chocolate;
+}
+
+.products {
+    
+    background-color: darkcyan;
+} */
+
+button {
+    border: none;
+    width: 160px;
+    height: 40px;
+    color: white;
+    margin-top: 15px;
+    background-color: rgb(80,194,19);
+    border-radius: 7px;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset {
+    width: 600px;
+    padding: 9px;
+}
