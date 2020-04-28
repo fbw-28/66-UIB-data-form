@@ -15,6 +15,7 @@ header {
     font-weight: 600;
     margin-bottom: 2rem;
 }
+
 .wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -22,9 +23,10 @@ header {
     margin: 1rem;
 }
 
-.pdata, .products{
-  width: 48%;
-  margin: 1rem;
+.pdata,
+.products {
+    width: 48%;
+    margin: 1rem;
 }
 
 .fieldset {
@@ -39,11 +41,15 @@ legend {
     font-weight: 600;
 }
 
-label, input, textarea, select {
+label,
+input,
+textarea,
+select {
     flex-basis: 100%;
 }
 
-input, select {
+input,
+select {
     padding: 5px;
 }
 
@@ -71,7 +77,6 @@ button {
 
 .check {
     font-weight: unset;
-   flex-basis: 100%;
+    flex-basis: 100%;
     margin: 10px;
 }
-
