@@ -13,7 +13,6 @@ header {
     padding: 20px;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 2rem;
 }
 
 .wrapper {
@@ -27,6 +26,15 @@ header {
 .products {
     flex-basis: 48%;
     margin: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .pdata,
+    .products {
+        flex-basis: 100%;
+        margin: 1rem 0;
+    }
 }
 
 .fieldset {
