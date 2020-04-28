@@ -55,10 +55,11 @@ button {
 
 body {
     display: flex;
+    flex-flow: wrap;
     justify-content: space-evenly;
 }
 
 fieldset {
     width: 600px;
-    padding: 9px;
+    padding: 10px;
 }
