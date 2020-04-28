@@ -11,8 +11,6 @@
     padding: 12px;
 }
 
-
-
 main {
     font-family: Arial, Helvetica, sans-serif;
     width: 96%;
@@ -22,13 +20,21 @@ main {
     grid-template-columns: 55% 45%;
     grid-template-rows: 1fr;
 }
+
+p,
+label:not([for*=development-choice]):not([for*=design]),
+legend {
+    font-weight: bolder;
+}
+
 .left-form , .right-form {
     margin: 15px;
     padding: 5px;
 }
-.left-form {
-    width: 98%;
-} 
+
+.container {
+    margin: 15px;
+}
 
 legend {
     padding: 0 5px 0 5px;
@@ -40,14 +46,10 @@ li {
     list-style: none;
 }
 
-p,
-label:not([for*=development-choice]):not([for*=design]),
-legend {
-    font-weight: bolder;
-}
 input {
     padding: 3px;
 }
+
 label, textarea, form input[type=text], form input[type=date], select {
     width: 99%;
 }
@@ -59,10 +61,6 @@ textarea {
 .right-form {
     grid-column-start: 2;
     grid-row-start: 1;
-}
-
-.container {
-    margin: 15px;
 }
 
 .checkbox {
@@ -90,5 +88,5 @@ button {
 }
 
 .button:hover {
-    background-color: #62c432;
+    background-color: #7ef343;
 }
