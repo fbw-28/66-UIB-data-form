@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Data form</title>
+</head>
+<body>
+    <form action="/url" method="GET" id="form-1">
+        <fieldset>
+          <legend>Personal Data</legend>
+          <div>
+            <label for="f-name-id">Frist name :</label>
+              <input type="text" name="f-name" id="f-name-id" maxlength="15" value="frist-name" >
+             
+          </div>
+
+          <div>
+            <label for="l-name-id">Last name :</label>
+          <input type="text" name="l-name" id="l-name-id" maxlength="15" value="last-name"> 
+         
+        </div>
+        
+        <div>
+            <label for="street-id"> street :</label>
+            <input type="text" name="street" id="street-id" maxlength="30" value="street">
+            
+        </div>
+        <div>
+            <label for="zcode-id">Zip code :</label>
+            <input type="password" name="Zipcode" maxlength="7" id="zcode-id" value="zipcode">
+       
+        </div>
+        <div>
+            <label for="city-id">city :</label>
+            <input type="text" id="city-id" value="city" name="city" maxlength="15">
+           
+        </div>
+
+        <div>
+            <label for="phone-id">Phone :</label>
+            <input type="number" id="phone-id" value="phone" name="phone" maxlength="15">
+         
+        </div>
+
+        <div>
+            <label for="email-id"> Email</label>
+            <input type="email" id="email-id" value="email" name="email" maxlength="25">
+          
+        </div>
+
+        <div>
+            <label for="com-id">comments</label>
+            <textarea name="comments" id="com-id" cols="20" rows="4" maxlength="50" placeholder="tell us about your important color etc.."> </textarea>
+           
+        </div>
+
+        </fieldset>
+        
+  <!-- form-two -->
+        <form action="/url" method="GET" id="form-2">
+          <fieldset>
+              <legend>products</legend>
+
+              <div>
+                 <label for="">Web Design</label>
+                 <input type="radio" name="individual" value="individual" id="indvi-id" >
+                 <label for="indvi-id"> individual</label>
+
+                 
+                 <input type="radio" name="Temp-name" value="Template" id="temp-id" >
+                 <label for="temp-id">Template</label>
+              </div>
+
+              <div>
+                <label for="">Web Development</label>
+                <input type="checkbox" name="html-css" value="item-html-css" id="html-css-id" >
+                <label for="html-css-id"> HTML & CSS</label>
+
+                
+                <input type="checkbox" name="JS-name" value="js" id="js-id" >
+                <label for="js-id">JavaScript</label>
+
+                <input type="checkbox" name="Mango-DB" value="mgo-data-base" id="mgo-id" >
+                <label for="mgo-id">Mango DB</label>
+              </div>
+
+              <div>
+                  <label for="pro-start-id"> project start</label>
+                  <input type="datetime" id="pro-start-id"   >
+              </div>
+
+
+              <div>
+                <label for="pro-end-id">project End</label>
+                <input type="datetime" id="pro-end-id"   >
+            </div>
+
+
+            <div>
+                <label for="cat-id">category</label>
+                <select name="category" id="cat-id">
+                    <option value="personal">personal</option>
+                    <option value="company">company</option>
+                    <option value="studient">studient</option>
+                    <option value="tester">tester"</option>
+                </select>
+            
+            </div>
+          </fieldset>
+        </form>
+
+       <button type="submit"> order our service</button>
+    </form>
+</body>
+</html>
