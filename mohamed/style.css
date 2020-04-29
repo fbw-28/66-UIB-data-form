@@ -31,9 +31,9 @@ section {
     margin: 0 auto;
 }
 
-.fieldset-2  input { 
+/* .fieldset-2  input { 
     width: 99%;
-}
+} */
 
 legend{
     color: blue;
@@ -50,5 +50,16 @@ legend{
     margin-top: 10px;
 
 }
+ label {
+     display: inline;
+     vertical-align: top;
+ }
 
-
+ input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+  }
+ 
+ .radio {
+     display: inline-block;
+ }
