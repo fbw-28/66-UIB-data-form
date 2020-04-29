@@ -33,6 +33,10 @@ li, div {
 input[type=text], input[type=tel], input[type=email], textarea, input[type=date], select {
     width: 98%;
 }
+input[type=text], input[type=tel], input[type=email], input[type=date], select {
+    height: 40px;
+}
+
 input[type=radio] {
     margin-left:10px;
 }
@@ -44,4 +48,5 @@ button {
     color: white;
     font-size: 110%;
     border-radius: 10%;
+    cursor: pointer;
 }
