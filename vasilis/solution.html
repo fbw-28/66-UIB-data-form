@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data-form-66</title>
+    <link rel="stylesheet" href="solution.css">
+</head>
+<body>
+    <section>
+    <form action="/url" method="post" class="form1">
+        <fieldset>
+            <legend>Personal Data</legend>
+            <ul>
+        <li>
+        <label for="firstName">First Name:</label> <br>
+        <input type="text" id="firstName" name="firstName" maxlength="20">
+    </li>
+    <li>
+        <label for="lastName">Last Name:</label> <br>
+        <input type="text" id="lastName" name="lastName" maxlength="20">
+    </li>
+    <li>
+        <label for="street">Street:</label> <br>
+        <input type="text" id="street" name="street" maxlength="30">
+    </li>
+    <li>
+        <label for="zipCode">Zipcode:</label> <br>
+        <input type="text" id="zipCode" name="zipCode" maxlength="10">
+    </li>
+    <li>
+        <label for="city">City:</label> <br>
+        <input type="text" id="city" name="city" maxlength="20">
+    </li>
+    <li>
+        <label for="phone">Phone:</label> <br>
+        <input type="tel" id="phone" name="phone" maxlength="30">
+    </li>
+    <li>
+        <label for="email">Email:</label> <br>
+        <input type="email" id="email" name="email" maxlength="40">
+    </li>
+    <li>
+        <label for="comments">Comments</label> <br>
+        <textarea name="coments" id="coments" cols="30" rows="10" placeholder="Tell us more about important colors, etc. "></textarea maxlength="100">
+    </li>
+    </ul>
+    </fieldset>
+    </form>
+
+
+    <form action="/url" method="post">
+        <fieldset>
+            <legend>Products</legend>
+            <ul>
+                <li>
+                    <p>Web Design:</p>
+                    <input type="radio" id="individual" name="template" value="individual" checked>
+                    <label for="individual">Individual</label>
+
+                    <input type="radio" id="template" name="template" value="template" >
+                    <label for="template">Template</label>
+                </li>
+                <li>
+                    <p>Web Development:</p>
+                    <div>
+                    <input type="checkbox" id="htmlCss" name="development" value="htmlCss">
+                    <label for="htmlCss">HTML & CSS</label> 
+                </div> <div>
+                    <input type="checkbox" name="development" id="javascript" value="javascript">
+                    <label for="javascript">javaScript</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="development"
+                    id="mongoDB" value="mongoDB">
+                    <label for="mongoDB">MongoDB</label>
+                </div>
+                </li>
+                <li>
+                    <label for="start">Project Start:</label> <br>
+                    <input type="date" id="start" name="start"> 
+                </li>
+                <li>
+                    <label for="end">Project End:</label> <br>
+                    <input type="date" id="end" name="end">
+                </li>
+                <li>
+                    <label for="category">Category:</label> <br>
+                    <select name="category" id="category">
+                        <option value="personla">Personal</option>
+                        <option value="nonpersonal">non Personal</option>
+                    </select>
+                </li>
+            </ul>
+
+        </fieldset>
+                <button type="submit">Order your Services</button>
+
+    </form>
+</section>
+</body>
+</html>
