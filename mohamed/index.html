@@ -7,21 +7,22 @@
     <title>Data form</title>
 </head>
 <body>
-    <section>
+   <section>
     <form action="/url" method="GET" >
-        <fieldset class="fieldset-1">
-          <legend>Personal Data</legend>
-          <div>
-            <label for="f-name-id">Frist name :</label>
-              <input type="text" name="f-name" id="f-name-id" maxlength="15" value="frist-name" >
+        <div class="fieldset-1">
+         <fieldset >
+           <legend>Personal Data</legend>
+             <div>
+                <label for="f-name-id">Frist name :</label>
+                <input type="text" name="f-name" id="f-name-id" maxlength="15" value="frist-name" >
              
-          </div>
+           </div>
 
-          <div>
+           <div>
             <label for="l-name-id">Last name :</label>
-          <input type="text" name="l-name" id="l-name-id" maxlength="15" value="last-name"> 
+            <input type="text" name="l-name" id="l-name-id" maxlength="15" value="last-name"> 
          
-        </div>
+            </div>
         
         <div>
             <label for="street-id"> street :</label>
@@ -53,28 +54,31 @@
 
         <div>
             <label for="com-id">comments</label>
-            <textarea name="comments" id="com-id" cols="20" rows="4" maxlength="50" placeholder="tell us about your important color etc.."> </textarea>
+            <textarea name="comments" id="com-id" cols="20" rows="6" maxlength="50" placeholder="tell us about your important color etc.."> </textarea>
            
         </div>
 
         </fieldset>
+</div>
+   </form>
 
-      
-          <fieldset class="fieldset-2">
+    <form action="/url" method="GET" >
+      <div class="fieldset-2">      
+          <fieldset >
               <legend>products</legend>
 
-              <div>
-                 <label for="">Web Design</label>
-                 <input type="radio" name="individual" value="individual" id="indvi-id" >
-                 <label for="indvi-id"> individual</label>
+              <div >
+                 <label  >Web Design</label>
+                 <input type="radio"   name="individual" value="individual" id="indvi-id" >
+                 <label for="indvi-id" > individual</label>
 
                  
                  <input type="radio" name="Temp-name" value="Template" id="temp-id" >
-                 <label for="temp-id">Template</label>
+                 <label for="temp-id" >Template</label>
               </div>
 
               <div>
-                <label for="">Web Development</label>
+                <label>Web Development</label>
                 <input type="checkbox" name="html-css" value="item-html-css" id="html-css-id" >
                 <label for="html-css-id"> HTML & CSS</label>
 
@@ -109,10 +113,10 @@
             
             </div>
           </fieldset>
-
-          <button type="submit"> order our service</button>
+        </div>  
+          <button type="submit" id="sub"> order our service</button>
         </form>
-
     </section>
+    
 </body>
 </html>
