@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.form-1, .form2Div3{
+    font-weight: bold;
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+legend {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(185, 32, 185);
+}
+
+ul {
+    list-style-type: none;    
+}
+
+.ul-1 > li {
+    padding: 10px;
+}
+
+.ul-1 input {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.msg{
+    width: inherit;
+}
+
+.form2Div2 input {
+    margin: 10px;    
+}
+
+.form2Div3 li {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.dropdown-list {
+    list-style: none;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.dropdown-list input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.dropdown-list select {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-2 {
+    background-color: rgb(47, 243, 21);
+    height: 30px;
+    border-radius: 5px;
+}
