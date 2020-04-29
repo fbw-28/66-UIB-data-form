@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 66</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <div class="forms"> 
+    <form class="form-1">
+        <fieldset>
+            <legend>
+                Personal Data
+            </legend>
+            <div>
+                <ul class="ul-1">
+                    <li>
+                        <label for="first_name">First name:</label><br />
+                        <input type="text" id="name" name="first_name" placeholder="Enter here" />
+                    </li>
+                    <li>
+                        <label for="last_name">Last name:</label><br />
+                         <input type="text" id="name" name="last_name" placeholder="Enter here"/>
+                    </li>
+                    <li>
+                        <label for="street">Street:</label><br />
+                        <input type="text" id="street" name="user_street" placeholder="Enter here"/>
+                    </li>
+                    <li>
+                        <label for="zipcode">Zipcode:</label><br />
+                         <input type="text" id="zipcode" name="user_zipcode" placeholder="Enter here"/>
+                    </li>
+                    <li>
+                        <label for="city">City:</label><br />
+                        <input type="text" id="city" name="user_city" placeholder="Enter here"/>
+                    </li>
+                    <li>
+                        <label for="phone">Phone:</label><br />
+                         <input type="text" id="phone" name="user_phone" placeholder="Enter here"/>
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label><br />
+                         <input type="email" id="email" name="user_mail" placeholder="Enter email here"/>
+                    </li>
+                    <li>
+                        <label for="msg">Comment:</label><br />
+                        <textarea name="user_comment" id="user_comment" cols="55" rows="5" placeholder="Tell us more about important colors, etc."></textarea>
+                    </li>  
+                </ul>
+            </div>
+        </fieldset>
+    </form>
+    <form  class="form-2">
+        <fieldset>
+          <legend>Products</legend>
+          <div class="form2Div1">
+              <h4>Web Designs:</h4>
+            <input
+              type="radio"
+              id="Individual"
+              name="choice"
+              value="Individual"
+              checked
+            />
+            
+            <label for="Individual">Individual</label>
+            <input
+              type="radio"
+              id="Template"
+              name="choice"
+              value="Template"              
+            />
+            
+            <label for="Template">Template</label>            
+            <div>              
+              <h4>Web Development:</h4>
+              <div  class="form2Div2">
+                 <div>
+                 <input type="checkbox" id="htmlcss" name="interest" value="htmlcss" checked />
+                 <label for="htmlcss">HTML & CSS</label>
+                </div>       
+                <div>
+                 <input type="checkbox" id="JavaScript" name="interest" value="JavaScript" />
+                 <label for="JavaScript">JavaScript</label>
+                </div>       
+                <div>
+                 <input type="checkbox" id="MongoDB" name="interest" value="MongoDB" />
+                 <label for="MongoDB">MongoDB</label>
+                 </div>
+              </div>              
+              <div class="form2Div3 dropdown-list">                
+                    <li>
+                        <label for="Project-Start">Project Start:</label><br />
+                         <input type="date" id="Project-Start" name="Project Start" placeholder="Enter here"/>
+                    </li>
+                    <li>
+                        <label for="Project-End">Project End:</label><br />
+                         <input type="date" id="Project-End" name="Project End" placeholder="Enter here"/>
+                    </li>
+                    <li>
+                        <label for="Catagory">Catagory:</label><br />                       
+                        <select name="Catagory" id="Catagory">
+                         <!-- <option value="">--Product list--</option> -->
+                         <option value="Product-a">Personal</option>
+                         <option value="Product-b">Product-b</option>
+                         <option value="Product-c">Product-c</option>
+                         <option value="Product-d">Product-d</option>
+                         <option value="Product-e">Product-e</option>
+                        </select><br />
+                    </li>
+                
+              </div>
+          </div>          
+        </fieldset>  
+        <button class="btn-2">Order our service!</button>      
+       </form>
+  </div>
+
+</body>
+</html>
