@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form exercise 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main-container">
+        <nav class="form-nav">
+            <h2>Forms</h2>
+        </nav>
+        <div class="form-container">
+            <form action="" method="post">
+                <div class="form1">
+                    <fieldset>
+                        <legend>Personal Data</legend>
+
+                        <div class="form-group">
+                            <label class="main-label" for="first">First Name:</label>
+                            <input type="text" id="first">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label" for="last">Last Name:</label>
+                            <input type="text" id="last">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label" for="street">Street:</label>
+                            <input type="text" name="" id="street">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label" for="zip">Zipcode:</label>
+                            <input type="text" name="" id="zip">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label" for="city">City:</label>
+                            <input type="text" name="" id="city">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label" for="phone">Phone:</label>
+                            <input type="tel" name="" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label" for="email">Email:</label>
+                            <input type="email" name="" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="main-label" for="comment">Comments:</label>
+                            <textarea name="" id="comment"
+                                placeholder="Tell us more about important colors, etc..."></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form2">
+                    <fieldset>
+                        <legend>Products</legend>
+                        <label class="main-label" for="radioSection">Web Design:</label>
+                        <div class="form-group design-section" id="radioSection">
+
+                            <div>
+                                <input type="radio" name="design" id="individual">
+                                <label for="individual">Individual</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="design" id="template">
+                                <label for="template">Template</label>
+                            </div>
+                        </div>
+                        <label class="main-label" for="checkboxSection">Web Development: </label>
+                        <div class="form-group dev-section" id="checkboxSection">
+                            <div class="dev-group">
+                                <input type="checkbox" id="basic">
+                                <label for="basic">HTML & CSS</label>
+                            </div>
+                            <div class="dev-group">
+                                <input type="checkbox" id="js">
+                                <label for="js">JavaScript</label>
+                            </div>
+                            <div class="dev-group">
+                                <input type="checkbox" id="db">
+                                <label for="db">MongoDB</label>
+                            </div>
+                            <div class="date-group">
+                                <div class="form-group start-group">
+                                    <label class="main-label" for="start">Project Start:</label>
+                                    <input type="date" id="start">
+                                </div>
+                                <div class="form-group end-group">
+                                    <label class="main-label" for="end">Project End:</label>
+                                    <input type="date" id="end">
+                                </div>
+                            </div>
+                            <div class="form-group category-group">
+                                <label class="main-label" for="cat">Category:</label>
+                                <select name="" id="cat">
+                                    <option value="">------------</option>
+                                    <option value="">Personal</option>
+                                    <option value="">Business</option>
+                                </select>
+                            </div>
+
+                    </fieldset>
+
+                    <button type="submit">Order our services</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
