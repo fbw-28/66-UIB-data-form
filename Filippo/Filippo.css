@@ -37,7 +37,7 @@ legend{
     
 }
 li {
-    text-decoration: none;
+    list-style: none;
 }
 input, textarea{
     width: 100%;
