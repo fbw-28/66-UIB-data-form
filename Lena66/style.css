@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+.personal_data {
+    float: left;
+    width: 54%;
+}
+
+.products {
+    float: right;
+    width: 44%;
+}
+
+legend {
+    font-size: 18px;
+    color: blueviolet;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+div {
+    margin: 10px 0px;
+}
+
+label,
+.title {
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.notbold_text {
+    font-weight: normal;
+    display: inline-block;
+}
+
+.personal_data input,
+select,
+#end,
+#start {
+    width: 100%;
+    height: 25px;
+}
+
+textarea {
+    width: 100%;
+}
+
+span {
+    margin-right: 8px;
+}
+
+button {
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: lawngreen;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    margin-left: 2%;
+}
