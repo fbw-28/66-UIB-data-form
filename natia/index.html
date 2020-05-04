@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- basic input form -->
+    <h1> Forms</h1>
+    <div id="oll-container">
+    <div id="data">
+    <form>
+      <fieldset>
+        <legend>Personal Data</legend>
+        <div>
+          <div>
+            <form action="/server-page" method="post">
+                <ul>
+                  <li>
+                    <label for="first">First Name</label>
+                    <input type="text" id="name" name="user_first" />
+                  </li>
+                  <li>
+                    <label for="last">Last Name</label>
+                    <input type="text" id="name" name="user_last" />
+                  </li>
+                  <li>
+                    <label for="street">Street</label>
+                    <input type="text" id="name" name="user_street" />
+                  </li>
+                  <li>
+                    <label for="zipcode">Zipcode</label>
+                    <input type="text" id="name" name="user_zipcode" />
+                  </li>
+                  <li>
+                    <label for="city">City</label>
+                    <input type="text" id="name" name="city" />
+                  </li>
+                  <li>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="name" name="user_phone" />
+                  </li>
+                  <li>
+                    <label for="email">Email</label>
+                    <input type="text" id="name" name="user_email" />
+                  </li>
+                  <li>
+                    <label for="msg">Comments</label>
+                    <textarea name="user_message"  placeholder="Tell us more important colors, etc.." id="msg" cols="20" rows="5" maxlength="200"></textarea>
+                  </li>
+                 
+                </ul>
+              </form>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+<!--new box-->
+    <div id="products">
+    <form>
+        <fieldset>
+          <legend>Products:</legend>
+          <div>
+            <p>Web Design</p>
+            <input
+              type="radio"
+              id="contact-choice-1"
+              name="contact"
+              value="individual"
+              checked
+            />
+            <label for="contact-choice-1">Individual</label>
+            <input
+              type="radio"
+              id="contact-choice-2"
+              name="contact"
+              value="template"
+            />
+            <label for="contact-choice-2">Template</label>
+
+            <p>Web Development:</p>
+            
+              <div>
+            <input
+            type="checkbox"
+            id="blowtorch"
+            name="interest"
+            value="html & css"
+            checked
+          />
+         
+          <label for="blowtorch">HTML & CSS</label>
+        </div>
+        <div>
+        <input
+          type="checkbox"
+          id="blowtorch"
+          name="interest"
+          value="JavaScrip"
+          
+        />
+        <label for="blowtorch">JavaScript</label>
+      </div>
+      <div>
+      <input
+      type="checkbox"
+      id="blowtorch"
+      name="interest"
+      value="MongoDB"
+      
+    />
+    <label for="blowtorch">MongoDB</label>
+  
+  </div>
+ 
+<p>Project Start:</p>
+    <form>
+      <label for="bday">
+        <input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}">
+        <span class="validity"></span>
+      </label>
+      
+    </form>
+    <p>Project End:</p>
+    <form>
+      <label for="bday" class="calendar">
+        <input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}">
+        <span class="validity"></span>
+      </label>
+      
+    </form>
+  
+  <br>
+  <p>Category:</p>
+  <select name="city" class="city-select">
+    <option value="">Personal</option>
+    <option value="one">one</option>
+    <option value="two">two</option>
+    <option value="three">three</option>
+    <option value="four">four</option>
+    <option value="five">	five</option>
+    <option value="six">six</option>
+  </select>
+  
+    </fieldset>
+        <div class="row">
+          <input type="submit" value="Order our service">
+        </div>
+      </div>
+      </form>
+    </div>
+  </body>
+</html>
+
