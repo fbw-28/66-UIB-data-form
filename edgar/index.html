@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Basic Data Exercises - Exercise: Form 1</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <div class="forms-container">
+        <div class="personal-data">
+
+            <form action="#">
+                <fieldset>
+                <legend>Presonal Data</legend>
+
+                <div><label for="first-name">First name:</label></div>
+                <div><input type="text" id="first-name" name="first-name" maxlength="40"/></div>
+                
+
+                <div><label for="last-name">Last name:</label></div>
+                <div><input type="text" id="last-name" name="last-name" maxlength="40"/></div>
+
+                <div><label for="street">Street:</label></div>
+                <div><input type="text" id="street" name="street" maxlength="40" size="40"/></div>
+        
+                <div><label for="zipcode">Zipcode:</label></div>
+                <div><input type="text" id="zipcode" name="zipcode" maxlength="12" size="40"/></div>
+
+                <div><label for="city">City:</label></div>
+                <div><input type="text" id="city" name="city" maxlength="12"/></div>
+            
+                <div><label for="phone">Phone:</label></div>
+                <div><input type="text" id="phone" name="phone" maxlength="14"/></div>
+            
+                <div><label for="email">Email:</label></div>
+                <div><input type="email" id="email" name="email" maxlength="60"/></div>
+
+                <div><label for="comments">Comments:</label></div>
+                <div><textarea name="comments" id="comments" rows="5" maxlength="544" placeholder="Tell us more about important colors, etc."></textarea></div>
+                </fieldset>
+
+        </div>
+
+        <div class="products">
+      
+                <fieldset>
+
+                <legend>Products</legend>
+
+                <div>
+                    <label for="web-Design">Web Design:</label>
+                </div>
+                
+                <div>
+                <input type="radio" id="individual" name="webdesign" value=individual" checked class="zero"/>
+                <label for="individual" class="regular-weight">Individual</label>
+
+                <input type="radio" id="template" name="webdesign" class="zero" value="template"/>
+                <label for="template" class="regular-weight">Template</label>
+                </div>                
+
+                <div><label for="web-development">Web Development:</label></div>
+
+                <div>
+                    <input type="checkbox" id="html-css" name="web-development" value="html-css" checked class="zero"/>
+                    <label for="html-css" class="regular-weight">HTML & CSS</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="javascript" name="web-development" value="javascript" class="zero"/>
+                    <label for="javascript" class="regular-weight">JavaScript</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="mongodb" name="web-development" value="mongodb" class="zero"/>
+                    <label for="mongodb" class="regular-weight">MongoDB</label>
+                </div>
+  
+                <div><label for="project-start">Project Start:</label></div>
+                <div><input type="date" id="project-start" name="project-start"></div>
+        
+                <div><label for="project-end">Project End:</label></div>
+                <div><input type="date" id="project-end" name="project-end"></div>
+
+
+                <label for="category-select">Category:</label>
+
+                <select name="category" id="category-select">
+                    <option value="">--Please select your Category--</option>
+                    <option value="personal">Personal</option>
+                    <option value="e-commerce">e-commerce</option>
+                    <option value="promotional">Promotional</option>
+                    <option value="web-application">Web-Application</option>
+                    <option value="e-learning">e-learning</option>
+                    <option value="revolutionary-ideas">Revolutionary idea I Had While Drunk</option>
+                </select>
+
+                </fieldset>                
+            <button type="submit">Order our services</button>
+            </form>
+        </div>            
+          
+    </div>
+</body>
+</html>
