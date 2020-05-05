@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Filippo.css">
+    <title>Document</title>
+</head>
+<body>
+<header>Forms</header>
+<div class="left">  
+<form action="/url-processing-info" method="POST">
+     <fieldset>
+         <br>
+        <legend>Personal Data</legend>
+            <div>  
+                <br>          
+                <ul>
+                    <li>
+                        <label for="first-name">First Name:</label><br><br>
+                        <input type="text" id="First-name" name="user_first_name">  
+                    </li>
+                    <br>
+                    <li>
+                        <label for="Last-name">Last Name:</label><br><br>
+                        <input type="text" id="name" name="user_last_name">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="street">Street:</label><br><br>
+                        <input type="text" id="street" name="user_street">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="zipcode">Zipcode:</label><br><br>
+                        <input type="text" id="zipcode" name="user_zipcode">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="street">Street:</label><br><br>
+                        <input type="text" id="street" name="user_street">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="city">City:</label><br><br>
+                        <input type="text" id="street" name="user_street">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="phone">Phone:</label><br><br>
+                        <input type="tel" id="phone" name="user_phone">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="email">Email:</label><br><br>
+                        <input type="email" id="email" name="user_email">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="comments">comments:</label><br><br>
+                        <textarea name="user_message" id="msg" cols="20" rows="5"></textarea>
+                    </li>
+                </ul>
+            </div>
+       
+    </fieldset>
+</form>
+</div>
+<div class="right">
+<form action="/url-processing-info" method="POST">
+    <fieldset>
+       <legend>Products</legend>
+    
+           <div>
+            <br>
+            <label for="Web-design">Web Design</label><br><br>
+            <input type="radio" id="web-design-choice-1" name="web-design" value="web-design">
+            <label for="web-design-choice-1">Individual</label>
+            <input type="radio" id="web-design-choice-2" name="web-design" value="web-design">
+            <label for="web-design-choice-2">Template</label>
+        </div>  
+        <br>
+        <label for="Web-design">Web Development</label><br><br>
+        <div>
+            <input type="checkbox" id="html-css" name="html-css" value="html-css" checked>
+            <label for="html-css">HTML and CSS</label><br>
+        </div>
+        <div>
+            <input type="checkbox" id="java-script" name="java-script" value="java-script" checked>
+            <label for="java-script">Java Script</label>
+        </div>
+        <div>
+            <input type="checkbox" id="mongo-db" name="mongo-db" value="mongo-db" checked>
+            <label for="mongo-db">MongoDB</label>
+        </div>
+        <br>
+        <label for="project-starts">Project starts:</label><br>
+        <input type="date" id="project-starts" name="project-starts">
+        <br><br>
+        <label for="project-ends">Project ends:</label><br>
+        <input type="date" id="project-ends" name="project-ends">
+        <br>
+        <br><br>
+        <label for="city-selector">Category</label><br>
+        <select name="category" id="category-select">
+        <option value="">Category</option>
+        <option value="personal">Personal</option>
+       
+    </select>
+    </fieldset>
+    <br>
+    <button>Order our services</button>
+</form>
+</div>                   
+</body>
+</html>
