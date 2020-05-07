@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Excersise 66 - Forms</title>
+</head>
+<header>Forms</header>
+
+<body>
+
+    <div class="wrapper">
+        <form class="pdata">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <div class="fieldset">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="first_name">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="last_name">
+                    <label for="street">Street</label>
+                    <input type="text" id="street" name="street">
+                    <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" name="zip_code">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city_name">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone_number">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email_address">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10"
+                        placeholder="Tell us more about important colors, etc."></textarea>
+                </div>
+            </fieldset>
+        </form>
+
+        <form class="products">
+            <fieldset>
+                <legend>Products</legend>
+                <div class="fieldset">
+                    <label for="webdesign">Web Design</label>
+                    <input class="radio" type="radio" id="webdesign-choice-1" name="individual" value="Individual"
+                        checked />
+                    <label class="radio" for="webdesign-choice-1">Individual</label>
+
+                    <input class="radio" type="radio" id="webdesign-choice-2" name="template" value="template" />
+                    <label class="radio" for="webdesign-choice-2">Template</label>
+
+                    <label for="webdev">Web Developement</label>
+                    <div class="check">
+                        <input type="checkbox" id="webdev-choice-1" name="html" value="html" />
+                        <label class="check" for="webdev-choice-1">HTML & CSS</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="webdev-choice-2" name="java" value="java" />
+                        <label class="check" for="webdev-choice-2">JavaScript</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="webdev-choice-3" name="webdev" value="webdev" />
+                        <label class="check" for="webdev-choice-3">MongoDB</label>
+                    </div>
+
+                    <label for="pstart">Project Start:</label>
+                    <input type="date" id="pstart" name="project_start">
+                    <label for="pend">Project End:</label>
+                    <input type="date" id="pend" name="project_end">
+                    <label for="category-select">Category:</label>
+                    <select name="category" id="category-select">
+                        <option value="personal">Personal</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <button type="submit">Order our services</button>
+        </form>
+    </div>
+</body>
+
+</html>
