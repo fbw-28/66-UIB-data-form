@@ -1,0 +1,65 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+section {
+    width: 100%;
+     height: 600px;
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: 1fr .5fr ;
+    grid-auto-rows: 1fr ;
+    grid-template-areas: 
+    "r-side " 
+    "l-side " ;   
+}
+ 
+.fieldset-1 {
+
+    height: 588px;
+    margin: 0 auto;
+    margin-right: 30px;
+    grid-area: r-side;
+}
+.fieldset-1  input, textarea{ 
+  width: 99%;
+}
+.fieldset-2 {
+    grid-area: l-side;
+    margin: 0 auto;
+}
+
+/* .fieldset-2  input { 
+    width: 99%;
+} */
+
+legend{
+    color: blue;
+    font-size: 130%;
+    font-weight: bold;
+    font-family: ' sans-serif';
+}
+ 
+#sub {
+    border-radius: 5px;
+    background-color: rgb(63, 219, 63, 1);
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+ label {
+     display: inline;
+     vertical-align: top;
+ }
+
+ input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+  }
+ 
+ .radio {
+     display: inline-block;
+ }
